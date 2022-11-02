@@ -27,7 +27,7 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -80,8 +80,12 @@ WSGI_APPLICATION = "config.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": "dagrskvi5i4a6d",
+        "USER": "gksoxggcmikeqx",
+        "PASSWORD": "30344a8df4e6b8bc8409e508f950b778f7ea032e551636b3d764a11a1cf470af",
+        "HOST": "ec2-52-23-131-232.compute-1.amazonaws.com",
+        "PORT": "5432",
     }
 }
 
